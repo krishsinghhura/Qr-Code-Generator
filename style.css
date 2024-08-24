@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+}
+.container{
+    background-color: #f2f2f2;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.header{
+    font-weight: 1000;
+}
+.main{
+    width: 375px;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.btn{
+    background-color: #f96d00;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.image{
+    display: none;
+    margin-left: 120px;
+    margin-top: 20px;
+    height: 150px;
+}
+
+.allbox{
+    display: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.box2{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 250px;
+    left: 625px;
+    border-radius: 60%;
+    border-right: 5px #f96d00 solid;
+    animation-name: buffer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 2s;
+}
+.box3{
+    height: 50px;
+    width: 40px;
+    position: absolute;
+    top: 250px;
+    left: 625px;
+    border-radius: 60%;
+    border-left: 5px #f96d00 solid;
+    animation-name: buffer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transition: 2s;
+}
+@keyframes buffer{
+    from{
+        transform: skew(0px);
+        transform: rotate(0deg);
+    }
+    to{
+        transform: skew(40deg);
+        transform: rotate(360deg);
+    }
+}
